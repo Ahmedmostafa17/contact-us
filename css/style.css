@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+#first {
+    background-image: url(../images/2.jpg);
+    height: 800px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.item {
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    animation: mlr 2s;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo {
+    background-image: url(../images/3.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 85%;
+}
+
+.inputs {
+    margin-top: 70px;
+}
+
+.form-group input {
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(165, 219, 181);
+    box-shadow: none;
+    outline: none;
+    box-shadow: 0px 0px 4px 0 darkgreen;
+}
+
+.form-group textarea {
+    border-radius: 10;
+    border: none;
+    border-bottom: 1px solid rgb(165, 219, 181);
+    box-shadow: 0 0 8px 0 darkgreen;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(57, 110, 73)!important;
+}
+
+.btn {
+    border-radius: 30px;
+    transition: all .5s ease-in-out;
+    text-transform: uppercase;
+    margin-left: 50%;
+}
+
+.btn:hover {
+    background-color: rgb(117, 103, 103);
+    color: white;
+    border: 1px solid rgb(117, 103, 103);
+}
+
+@keyframes mlr {
+    0% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.ahmed {
+    position: relative;
+}
+
+span {
+    position: absolute;
+    top: 10px;
+    left: 90%;
+}
+
+#icon1 {
+    position: absolute;
+    left: 5px;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#icon2 {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    opacity: 1;
+    height: 20px;
+}
+
+#method {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    z-index: 999;
+    height: 20px;
+    opacity: 0;
+}
+
+
+/**email validarion  */
+
+.design {
+    position: relative;
+}
+
+#form.valid .design:after {
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+#form.invalid .design:before {
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
